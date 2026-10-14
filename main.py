@@ -46,6 +46,16 @@ def generate_meme(scenario):
 @app.route("/")
 def home():
     return render_template("index.html")
+```python
+@app.route("/sitemap.xml")
+def sitemap():
+    return """<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://memelab-5uwg.onrender.com/</loc>
+    </url>
+</urlset>""", 200, {"Content-Type": "application/xml"}
+```
 
 
 @app.route("/generate", methods=["POST"])
