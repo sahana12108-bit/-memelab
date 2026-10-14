@@ -1,0 +1,142 @@
+
+/* MemeLab — modern purple design */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #f8f7ff;
+    background:
+        radial-gradient(ellipse at top left, #39215f 0%, transparent 45%),
+        linear-gradient(135deg, #100d1c, #19122b 55%, #0c1020);
+}
+
+header {
+    padding: 24px 6%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    margin: 0;
+    color: #d7b5ff;
+    font-size: 2rem;
+}
+
+h2, h3 {
+    color: #eee5ff;
+}
+
+p {
+    color: #c3bbd6;
+    line-height: 1.6;
+}
+
+main {
+    width: min(1100px, 92%);
+    margin: 35px auto;
+}
+
+section, .card, .panel, .editor, .preview {
+    border: 1px solid rgba(216, 181, 255, 0.16);
+    border-radius: 18px;
+}
+
+.card, .panel, .editor, .preview {
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.055);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 8px 0 16px;
+    border: 1px solid #574273;
+    border-radius: 10px;
+    background: #171225;
+    color: white;
+    font: inherit;
+    outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #c49aff;
+    box-shadow: 0 0 0 3px rgba(196, 154, 255, 0.15);
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    color: #e3d6ff;
+    font-weight: 600;
+}
+
+button {
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 10px;
+    background: #a66bff;
+    color: #170d29;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+    background: #c39aff;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+.primary-button {
+    background: linear-gradient(135deg, #c49aff, #8f5bfa);
+}
+
+.full-button {
+    width: 100%;
+    margin: 10px 0 18px;
+}
+
+img, canvas {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+a {
+    color: #d7b5ff;
+}
+
+footer {
+    padding: 25px;
+    color: #a9a0bb;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    header {
+        padding: 20px 4%;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .card, .panel, .editor, .preview {
+        padding: 15px;
+    }
+}
+
